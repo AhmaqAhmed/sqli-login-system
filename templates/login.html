@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <link rel="stylesheet" href=" static/css/styles.css" />
+    <title>Login</title>
+</head>
+<body>
+    <main class="card" role="main" aria-labelledby="loginHeading">
+    <h1 id="loginHeading" class="visually-hidden">Login</h1>
+
+    <form method="POST" action="/">
+      <div class="brand">
+        <span class="brand-text">Log In</span>
+      </div>
+
+      <label for="username" class="label">Username</label>
+      <input id="username" name="username" type="text" inputmode="text" required autocomplete="username" />
+
+      <label for="password" class="label">Password</label>
+      <div class="pw-wrap">
+        <input id="password" name="password" type="password" required autocomplete="current-password" />
+      </div>
+
+      <button id="submitBtn" class="primary" type="submit">Login</button>
+
+      <div id="msg" role="status" aria-live="polite" class="msg" hidden></div>
+      
+      {% if msg %}
+      <div class="popup-overlay">
+        <div class="popup {{ msg[1] }}">
+          <p>{{ msg[0] }}</p>
+          <button onclick="closePopup()">OK</button>
+        </div>
+      </div>
+      {% endif %}
+
+      <script>
+      function closePopup() {
+        document.querySelector('.popup-overlay').style.display = 'none';
+      }
+      </script>
+    </form>
+  </main>
+</body>
+</html>
