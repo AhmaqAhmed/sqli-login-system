@@ -28,12 +28,13 @@
       <div id="msg" role="status" aria-live="polite" class="msg" hidden></div>
       
       {% if msg %}
-      <div class="popup-overlay">
-        <div class="popup {{ msg[1] }}">
-          <p>{{ msg[0] }}</p>
-          <button onclick="closePopup()">OK</button>
-        </div>
-      </div>
+      <script>
+        alert("{{ msg[0] }}");
+
+        {% if msg[1] == "success" %}
+          window.location.href = "{{ redirect_url }}";
+        {% endif %}
+      </script>
       {% endif %}
 
       <script>
