@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Drive — Mock</title>
+  <link rel="stylesheet" href="static/css/styles2.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">Drive</div>
+      <nav>
+        <a class="nav-item active">My Drive</a>
+        <a class="nav-item">Shared with me</a>
+        <a class="nav-item">Recent</a>
+        <a class="nav-item">Starred</a>
+        <a class="nav-item">Trash</a>
+      </nav>
+      <div class="storage">
+        <div class="bar"><span style="width:46%"></span></div>
+        <div class="storage-text">46% used — 68 GB of 150 GB</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="left">
+          <button class="btn primary">New</button>
+          <div class="view-toggle">
+            <button class="btn small">Grid</button>
+            <button class="btn small active">List</button>
+          </div>
+        </div>
+
+        <div class="search-wrap">
+          <input id="search" placeholder="Search in Drive" />
+        </div>
+
+        <div class="right">
+          <button class="avatar" title="Account">JD</button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="breadcrumbs">My Drive / Projects / 2026</div>
+
+        <div class="files">
+          <!-- File rows -->
+          <div class="file-row">
+            <div class="file-icon file-folder"></div>
+            <div class="file-name">Marketing Assets</div>
+            <div class="file-meta">Folder • Modified today</div>
+            <div class="file-size">—</div>
+          </div>
+
+          <div class="file-row">
+            <div class="file-icon file-doc"></div>
+            <div class="file-name">Campaign Brief.docx</div>
+            <div class="file-meta">Google Docs • Modified Feb 12</div>
+            <div class="file-size">24 KB</div>
+          </div>
+
+          <div class="file-row">
+            <div class="file-icon file-sheet"></div>
+            <div class="file-name">Budget Q1.xlsx</div>
+            <div class="file-meta">Google Sheets • Modified Jan 30</div>
+            <div class="file-size">18 KB</div>
+          </div>
+
+          <div class="file-row">
+            <div class="file-icon file-slide"></div>
+            <div class="file-name">Pitch Deck.pptx</div>
+            <div class="file-meta">Slides • Modified Jan 20</div>
+            <div class="file-size">3.2 MB</div>
+          </div>
+
+          <div class="file-row">
+            <div class="file-icon file-pdf"></div>
+            <div class="file-name">Specs.pdf</div>
+            <div class="file-meta">PDF • Modified Jan 10</div>
+            <div class="file-size">1.1 MB</div>
+          </div>
+
+          <div class="file-row">
+            <div class="file-icon file-image"></div>
+            <div class="file-name">Logo-variations.png</div>
+            <div class="file-meta">Image • Modified Dec 30</div>
+            <div class="file-size">2.6 MB</div>
+          </div>
+
+          <div class="empty-note">Tip: Click "New" to create a folder or upload files.</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
