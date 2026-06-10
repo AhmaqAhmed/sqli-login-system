@@ -22,7 +22,7 @@ The aim of the current project is to allow students to comprehend:
 * Attack through SQL Injection
 * The importance of Input Validation and Parameterized Queries 
 * Security Considerations in Coding
-* 
+  
 ## Setup
 ### 1. Clone the Repository
 ```bash
