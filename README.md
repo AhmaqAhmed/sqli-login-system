@@ -76,7 +76,7 @@ Do not use the code in any real-life environment. Use parameterized queries for 
 
 ## Blog Post
 For detailed information about the project and process, visit:
-https://sqli-project-blog1.hashnode.dev/sqli-demonstration
+https://first-projects-blog.hashnode.dev/sqli-demonstration
 
 ## Enhancements to Consider
 * Show how login works properly through parameterized queries
